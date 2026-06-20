@@ -3,59 +3,65 @@ import React from "react";
 const materials = [
   {
     image: "/images/collection1.png",
-    title: "Indoor Lighting Solutions",
+    title: "Indoor LED Lighting Solutions",
+    alt:"Led light manufacturer in Delhi",
     description:
-      "Discover a versatile range of downlights, panel lights, track lights, and decorative fixtures designed to enhance comfort, ambiance, and functionality in modern interiors.",
+      "Explore our range of panel lights, surface-mounted lights, and concealed downlights, manufactured to enhance comfort and ambiance in modern homes and offices across Delhi.",
   },
   {
     image: "/images/collection2.png",
-    title: "Commercial Lighting Systems",
+    title: "Outdoor & Street LED Lighting",
+    alt:"Led light manufacturer in Delhi",
     description:
-      "Our commercial lighting solutions provide optimal illumination for offices, retail stores, hospitality spaces, and workplaces while maximizing energy efficiency.",
+      "Weatherproof LED street lights and flood lights engineered for durability and reliable performance in Delhi's outdoor conditions — ideal for roads, facades, and public spaces.",
   },
   {
     image: "/images/collection3.png",
-    title: "Outdoor & Industrial Lighting",
+    title: "Commercial & Industrial LED Lighting",
+    alt:"Led light manufacturer in Delhi",
     description:
-      "Engineered for durability and performance, our outdoor and industrial fixtures deliver reliable illumination for landscapes, facades, warehouses, and public spaces.",
+      "COB lights, spotlights, and high-output panel and flood lighting built for offices, retail stores, warehouses, and industrial facilities.",
   },
 ];
 
 const Collections = () => {
   return (
-    <section className="relative overflow-hidden bg-black">
+    <section className="relative overflow-hidden bg-black" id="collections">
       {/* Vertical Background Text */}
-      <div className="absolute -left-10 top-0 h-full flex items-center pointer-events-none">
-        <span
-          className="text-[150px] font-bold leading-none text-white/[0.07]"
-          style={{
-            writingMode: "vertical-rl",
-            transform: "rotate(180deg)",
-          }}
-        >
-          COLLECTIONS
-        </span>
-      </div>
+      <div className="pointer-events-none absolute left-0 top-0 flex h-full items-center">
+  <span
+    className="
+      text-[90px]
+      md:text-[100px]
+      lg:text-[150px]
+      font-bold
+      leading-none
+      text-white/[0.09]
+      md:text-white/[0.08]
+      lg:text-white/[0.08]
+    "
+    style={{
+      writingMode: "vertical-rl",
+      transform: "rotate(180deg)",
+    }}
+  >
+    COLLECTIONS
+  </span>
+</div>
 
       <div className="grid lg:grid-cols-2">
         {/* LEFT */}
-        <div className="relative z-10 px-10 py-24 lg:px-24">
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.1em] text-primary">
+        <div className="relative z-10 px-10 py-10 md:py-24 lg:px-24">
+          <p className="mb-6 text-sm lg:text-xs font-semibold uppercase tracking-[0.1em] text-primary">
             \ COLLECTIONS \
           </p>
 
-          <h2 className="text-[62px] font-semibold leading-[0.95] text-white">
-            Lighting Solutions
+          <h2 className="text-4xl md:text-[62px] font-semibold leading-[0.95] text-white">
+            Our LED Lighting Collections
           </h2>
 
           <p className="mt-8 text-[19px] font-medium text-white">
-            Innovative lighting solutions designed for every space.
-          </p>
-
-          <p className="mt-6 max-w-[700px] leading-relaxed text-white/75">
-            At Scoot Lighting, we combine modern design, advanced LED
-            technology, and premium materials to create lighting solutions that
-            enhance residential, commercial, and architectural environments.
+            As a complete LED light manufacturer, SCOOT (PK Led Light) offers solutions designed for every space — indoor, outdoor, and industrial.
           </p>
 
           <div className="mt-16 space-y-10">
@@ -85,7 +91,7 @@ const Collections = () => {
         <div className="relative min-h-[1000px]">
           <img
             src="/images/collection4.png"
-            alt=""
+            alt="Led light manufacturer in Delhi"
             className="absolute inset-0 h-full w-full object-cover"
           />
 

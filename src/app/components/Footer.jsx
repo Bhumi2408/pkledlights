@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
-    <footer className="bg-black pt-28 pb-10 px-40">
+    <footer className="bg-black pt-28 pb-10 px-5 md:px-10 lg:px-40">
 
       <div>
 
@@ -24,35 +24,32 @@ export default function Footer() {
 
             <img
               src="/images/logo.png"
-              alt="Scoot"
+              alt="Led light manufacturer in Delhi"
               className="w-[220px] bg-white/70 py-1 rounded-xl"
             />
 
             <p className="mt-8 max-w-[420px] leading-relaxed text-white/70">
-              We provide innovative lighting solutions for homes,
-              offices, commercial spaces, and architectural projects.
-              Scoot Lighting combines premium design with advanced LED
-              technology.
+              SCOOT (PK Led Light), established in 2017, is a trusted LED light manufacturer in Delhi, supplying panel lights, street lights, flood lights, COB lights, and more across India.
             </p>
 
             <div className="mt-7 flex gap-4">
 
               <a
-                href="#"
+                href="https://www.facebook.com/people/P-K-Lighting/61577281115809/" target="_blank"
                 className="flex h-8 w-8 items-center justify-center bg-primary text-black transition hover:scale-110"
               >
                 <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5 "/>
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/office.pklighting/" target="_blank"
                 className="flex h-8 w-8 items-center justify-center bg-primary text-black transition hover:scale-110"
               >
                 <FontAwesomeIcon icon={faInstagram} className="w-5 h-5 "/>
               </a>
 
               <a
-                href="#"
+                href="https://www.youtube.com/@pklighting78" target="_blank"
                 className="flex h-8 w-8 items-center justify-center bg-primary text-black transition hover:scale-110"
               >
                 <FontAwesomeIcon icon={faYoutube} className="w-5 h-5 "/>
@@ -71,29 +68,41 @@ export default function Footer() {
 
             <div className="mt-4 h-[2px] w-12 bg-primary" />
 
-            <ul className="mt-8 space-y-3">
+            <ul className="mt-5 space-y-3">
 
               <li>
-                <Link href="#" className="text-[15px] text-white/80 hover:text-primary">
+                <Link href="#about" className="text-[15px] text-white/80 hover:text-primary">
                   About Us
                 </Link>
               </li>
 
               <li>
-                <Link href="#" className="text-[15px] text-white/80 hover:text-primary">
+                <Link href="#features" className="text-[15px] text-white/80 hover:text-primary">
+                  Features
+                </Link>
+              </li>
+
+              <li>
+                <Link href="#services" className="text-[15px] text-white/80 hover:text-primary">
                   Services
                 </Link>
               </li>
 
-              <li>
-                <Link href="#" className="text-[15px] text-white/80 hover:text-primary">
-                  Projects
+               <li>
+                <Link href="#collections" className="text-[15px] text-white/80 hover:text-primary">
+                  Collections
                 </Link>
               </li>
 
               <li>
-                <Link href="#" className="text-[15px] text-white/80 hover:text-primary">
-                  Collections
+                <Link href="/blogs" className="text-[15px] text-white/80 hover:text-primary">
+                  Blogs
+                </Link>
+              </li>
+
+              <li>
+                <Link href="#faq" className="text-[15px] text-white/80 hover:text-primary">
+                  FAQ
                 </Link>
               </li>
 
@@ -121,9 +130,9 @@ export default function Footer() {
                 />
 
                 <p className="text-[15px] leading-relaxed text-white/80">
-                  SCOOT Lighting Pvt Ltd
+                 M-34, Sector-1, Bawana, 
                   <br />
-                  New Delhi, India
+                  Delhi, India, 110039
                 </p>
 
               </div>
@@ -136,10 +145,10 @@ export default function Footer() {
                 />
 
                 <a
-                  href="mailto:info@scootlighting.com"
+                  href="mailto:office.pklighting@gmail.com"
                   className="text-[15px] text-white/80"
                 >
-                  info@scootlighting.com
+                  office.pklighting@gmail.com
                 </a>
 
               </div>
@@ -152,10 +161,10 @@ export default function Footer() {
                 />
 
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+919212533254"
                   className="text-[15px] text-white/80"
                 >
-                  +91 99999 99999
+                  +91 92125 33254
                 </a>
 
               </div>

@@ -4,26 +4,26 @@ const articles = [
   {
     date: "12 APRIL, 2026",
     category: "LED TECHNOLOGY",
-    title: "Smart Lighting Solutions for Modern Spaces",
+    title: "Top LED Panel Light Manufacturers in Delhi — What to Look For",
     description:
-      "Discover how advanced LED systems and intelligent controls are transforming residential and commercial environments with greater efficiency and comfort.",
+      "Upgrade your space with energy-efficient LED panel lights from a trusted Delhi manufacturer. Stylish, durable, and ideal for homes and offices alike.",
   },
   {
     date: "28 MAY, 2026",
     category: "LIGHTING TIPS",
-    title: "Choosing the Right Lighting for Every Room",
+    title: "LED Street Lights vs Flood Lights — Which One Do You Need?",
     description:
-      "Learn how layered lighting, color temperature, and fixture selection can enhance aesthetics, functionality, and atmosphere throughout your space.",
+      "Choosing between street lighting and flood lighting for your project? Here's how to decide based on coverage area, brightness, and application.",
   },
 ];
 
 const Blog = () => {
   return (
-    <section className="relative overflow-hidden bg-[#252525] py-32 px-40">
+    <section className="relative overflow-hidden bg-[#252525] py-32 px-5 md:px-10 lg:px-40" id="blog">
       {/* Background Text */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
+      <div className="absolute right-0 top-1/3 lg:top-1/2 -translate-y-1/2 pointer-events-none">
         <h1
-          className="text-[200px] font-bold leading-none text-white/[0.07]"
+          className="text-[100px] lg:text-[200px] font-bold leading-none text-white/[0.07]"
           style={{
             writingMode: "vertical-rl",
             transform: "rotate(180deg)",
@@ -57,7 +57,7 @@ const Blog = () => {
                     {article.date} | {article.category}
                   </p>
 
-                  <h3 className="text-[26px] font-medium leading-tight text-white underline underline-offset-4 transition duration-300 hover:text-primary">
+                  <h3 className="text-[24px] font-medium leading-tight text-white underline underline-offset-4 transition duration-300 hover:text-primary">
                     {article.title}
                   </h3>
 
@@ -74,7 +74,7 @@ const Blog = () => {
             <div className="overflow-hidden rounded-tl-[220px]">
               <img
                 src="/images/blog.png"
-                alt="Lighting News"
+                alt="Led light manufacturer in Delhi"
                 className="h-[650px] w-full object-cover object-top-left"
               />
             </div>

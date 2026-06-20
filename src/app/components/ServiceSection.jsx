@@ -3,83 +3,71 @@ import React from "react";
 const services = [
   {
     icon: "/images/service5.svg",
-    title: "CEILING FIXTURES",
-    items: ["Chandeliers", "Flush Mount", "Pendant Lights", "Track Lighting"],
+    title: "PANEL LIGHTS",
+    items: ["Eco Series Panel Light (12W)", "Slim Panel Light (12W / 18W)", "Diamond Panel Light (15W)", "Step Panel Light (6W)"],
   },
   {
     icon: "/images/service6.svg",
-    title: "FLOOR LAMPS",
-    items: ["Arc Lamps", "Tripod Lamps", "Task Lamps", "Torchiere Lamps"],
+    title: "SURFACE MOUNTED LIGHTS",
+    items: ["Cylinder Surface Light (12W / 18W)", "Step Surface Light (12W)", "LED Surface Light (12W)", "Moon Surface Light (15W)"],
   },
   {
     icon: "/images/service7.svg",
-    title: "WALL SCONCES",
+    title: "LED FLOODLIGHTS",
     items: [
-      "Swing Arm Sconces",
-      "Candle Sconces",
-      "Picture Lights",
-      "Uplight Sconces",
+      "LED Flood Light (100W)",
+      "LED Flood Light with Lens (100W)",
     ],
   },
   {
     icon: "/images/service8.svg",
-    title: "WALL MOUNTED LIGHTS",
+    title: "LED STREET LIGHTS",
     items: [
-      "Wall Washers",
-      "Vanity Lights",
-      "Reading Lights",
-      "Outdoor Wall Lights",
+      "LED Street Light (24W)",
+      "LED Street Light (50W)",
     ],
   },
   {
     icon: "/images/service9.svg",
-    title: "KITCHEN ISLAND LIGHTS",
+    title: "LED CONCEALED LIGHTS",
     items: [
-      "Linear Pendant Lights",
-      "Globe Pendant Lights",
-      "Mini Pendant Lights",
-      "Recessed Lighting",
+      "Nexa Downlight (9W)",
+      "Eco Downlight (7W)",
     ],
   },
   {
     icon: "/images/service10.svg",
-    title: "MODULAR LIGHTING",
+    title: "COB LIGHTS",
     items: [
-      "Modular Track Systems",
-      "Magnetic LED Panels",
-      "Modular Wall Lights",
-      "Adjustable Clusters",
+      "PC COB Light (7W)",
+      "Deep COB Magic Light (12W)",
     ],
   },
   {
     icon: "/images/service11.svg",
-    title: "LED LIGHTING",
+    title: "LED SPOTLIGHTS",
     items: [
-      "Recessed Downlights",
-      "Strip Lights",
-      "Pendant Fixtures",
-      "Wall Washers",
+      "LED Spot Light (7W)",
+      "LED Spot COB Light (2W)",
     ],
   },
   {
     icon: "/images/service12.svg",
-    title: "SMART LIGHTING",
+    title: "STEP LIGHTS & DEEP LIGHTS",
     items: [
-      "Smart Bulbs",
-      "Smart Light Strips",
-      "Smart Dimmer Switches",
-      "Smart Lighting Kits",
+      "Step Panel Light (6W, Square)",
+      "LED Deep Downlight",
     ],
   },
 ];
-
+ 
 const ServiceSection = () => {
   return (
     <>
-      <section className="relative overflow-hidden bg-black py-28 px-32">
+      <section className="relative overflow-hidden bg-black py-28 px-2 md:px-10 lg:px-32" id="services">
         {/* Background Text */}
         <div className="pointer-events-none absolute top-1/2 right-0 -translate-y-1/2 translate-x-[43%] -rotate-90 select-none">
-          <span className="text-[300px] font-bold leading-none text-white/[0.08]">
+          <span className="text-[100px] md:text-[300px] font-bold leading-none text-white/[0.08]">
             SERVICES
           </span>
         </div>
@@ -88,26 +76,24 @@ const ServiceSection = () => {
           {/* Top */}
           <div className="mb-24 grid gap-16 lg:grid-cols-2 items-end">
             <div>
-              <p className="mb-6 text-xs font-semibold uppercase tracking-[0.1em] text-primary">
+              <p className="mb-6 text-sm md:text-xs font-semibold uppercase tracking-[0.1em] text-primary">
                 \ SERVICES \
               </p>
 
-              <h2 className="max-w-[700px] text-[62px] font-semibold leading-[0.95] text-white">
-                Discover Power of
+              <h2 className="max-w-[700px] text-4xl md:text-[55px] font-semibold leading-[0.95] text-white">
+                Explore Our Wide Range of 
                 <br />
-                Perfect Lighting
+                LED Lighting Solutions
               </h2>
             </div>
 
             <div className="max-w-[650px] lg:ml-auto">
               <h3 className="text-[19px] font-medium leading-tight text-white">
-                Welcome to our diverse world of lighting solutions.
+                OUR PRODUCT RANGE
               </h3>
 
               <p className="mt-5 leading-relaxed text-white/70">
-                From ambient to task lighting, our expertise spans a wide range
-                of styles and functionalities to suit every space and
-                requirement.
+                As a full-scale LED light manufacturer in Delhi, SCOOT (PK Led Light) manufactures 50+ product types across the categories below.
               </p>
 
               <p className="mt-5 flex items-center gap-3 font-semibold text-primary">
@@ -117,7 +103,7 @@ const ServiceSection = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid gap-y-20 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-y-20 grid-cols-2 xl:grid-cols-4">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -125,7 +111,7 @@ const ServiceSection = () => {
               >
                 <img
                   src={service.icon}
-                  alt=""
+                  alt="Led light manufacturer in Delhi"
                   className="h-16 w-16 object-contain opacity-80 transition duration-500 group-hover:scale-110"
                 />
 
@@ -151,12 +137,12 @@ const ServiceSection = () => {
         </div>
 
          <div className="mx-auto max-w-[1400px] mt-20 relative z-10">
-          <div className="grid h-[720px] grid-cols-12 gap-6">
+          <div className="grid h-[720px] grid lg:grid-cols-12 gap-6">
             {/* Top Left */}
             <div className="col-span-6 row-span-1 overflow-hidden">
               <img
                 src="/images/service2.png"
-                alt=""
+                alt="Led light manufacturer in Delhi"
                 className="h-full w-full object-cover transition duration-700 hover:scale-105"
               />
             </div>
@@ -165,7 +151,7 @@ const ServiceSection = () => {
             <div className="col-span-3 row-span-2 overflow-hidden">
               <img
                 src="/images/service3.png"
-                alt=""
+                alt="Led light manufacturer in Delhi"
                 className="h-full w-full object-cover transition duration-700 hover:scale-105"
               />
             </div>
@@ -174,7 +160,7 @@ const ServiceSection = () => {
             <div className="col-span-3 row-span-2 overflow-hidden rounded-tr-[180px]">
               <img
                 src="/images/service4.png"
-                alt=""
+                alt="Led light manufacturer in Delhi"
                 className="h-full w-full object-cover transition duration-700 hover:scale-105"
               />
             </div>
@@ -183,7 +169,7 @@ const ServiceSection = () => {
             <div className="col-span-6 overflow-hidden rounded-bl-[180px]">
               <img
                 src="/images/service1.png"
-                alt=""
+                alt="Led light manufacturer in Delhi"
                 className="h-full w-full object-cover transition duration-700 hover:scale-105"
               />
             </div>

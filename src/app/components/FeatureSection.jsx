@@ -4,48 +4,52 @@ import { Check } from "lucide-react";
 
 export default function FeatureSection() {
   const features = [
-    "We listen to our clients",
-    "We factor in the architect's intent",
-    "We take your budget into account",
-    "We are attentive to details",
-    "We design lighting to be seen by everyone",
+    "Proven industry expertise — manufacturing since 2017",
+    "Wide range of LED lighting solutions across 50+ product types",
+    "Premium-quality components built for superior performance and longevity",
+    "Competitive wholesale pricing without compromising on quality",
+    "Reliable customer service with hassle-free bulk orders and after-sales support",
   ];
   const projects = [
     {
       image: "/images/project-1.png",
-      title: "Hospitality Projects",
+      title: "Commercial & Office Projects",
+      alt:"Led light manufacturer in Delhi",
       description:
-        "Premium lighting solutions crafted for restaurants, cafés and luxury hospitality spaces.",
+        "Our panel lights and surface-mounted lights are designed for offices, retail stores, and commercial spaces — delivering bright, even illumination with maximum energy efficiency.",
     },
     {
       image: "/images/project-2.png",
-      title: "Healthcare Projects",
+      title: "Outdoor & Street Lighting Projects",
+      alt:"Led light manufacturer in Delhi",
       description:
-        "We focus on providing soothing and functional lighting solutions to promote healing and well-being.",
+        "As a trusted LED light manufacturer, our weatherproof street lights and flood lights are built for roads, parking areas, parks, and outdoor industrial spaces across Delhi NCR.",
     },
     {
       image: "/images/project-3.png",
-      title: "Corporate Projects",
+      title: "Industrial Projects",
+      alt:"Led light manufacturer in Delhi",
       description:
-        "Modern office lighting systems that improve productivity and create inspiring workspaces.",
+        "High-output flood lights and panel lighting solutions engineered for warehouses, factories, and large-scale industrial facilities.",
     },
     {
       image: "/images/project-4.png",
       title: "Residential Projects",
+      alt:"Led light manufacturer in Delhi",
       description:
-        "Elegant decorative and architectural lighting for modern homes and luxury interiors.",
+        "Concealed lights, spotlights, and panel lights manufactured for elegant, energy-efficient lighting in modern homes.",
     },
   ];
 
   return (
     <>
-      <section className="bg-black">
+      <section className="bg-black" id="features">
         <div className="grid lg:grid-cols-2">
           {/* LEFT IMAGE */}
           <div className="relative min-h-[850px]">
             <Image
               src="/images/feature.png"
-              alt="Feature"
+              alt="Led light manufacturer in Delhi"
               fill
               className="object-cover"
             />
@@ -55,26 +59,26 @@ export default function FeatureSection() {
 
           {/* RIGHT CONTENT */}
           <div className="bg-black px-10 py-28 lg:px-20">
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.1em] text-primary">
+            <p className="mb-5 text-sm lg:text-xs font-semibold uppercase tracking-[0.1em] text-primary">
               \ FEATURES \
             </p>
 
-            <h2 className="max-w-[700px] text-[62px] font-semibold leading-[1.05] text-white">
-              What Makes Our
+            <h2 className="max-w-[700px] text-4xl md:text-[62px] font-semibold leading-[1.05] text-white">
+              What Makes SCOOT (PK Led Light)
               <br />
-              Offering Seamless
+              the Right Choice
             </h2>
 
             <h3 className="mt-9 text-[19px] font-medium text-[#E1E1E1]">
-              Looking for a lighting solution for your home or office?
+              Looking for a dependable LED light manufacturer in Delhi for your
+              home, office, or business?
             </h3>
 
             <p className="mt-8 max-w-[700px] leading-relaxed text-white/70">
-              At Scoot Lighting, we're dedicated to illuminating your spaces
-              with creativity and precision. With our expertise in lighting
-              design for residential and office environments, we're your top
-              choice for bringing your vision to life with innovative and
-              tailored solutions.
+              At SCOOT (PK Led Light), our in-house manufacturing facility and
+              skilled team allow us to deliver high-performance LED lighting
+              solutions tailored to your exact needs — backed by 8+ years of
+              proven industry expertise.
             </p>
 
             <div className="mt-10 space-y-4">
@@ -94,10 +98,10 @@ export default function FeatureSection() {
             </p>
 
             <Link
-              href="#"
+              href="#collections"
               className="mt-8 inline-flex h-12 w-[150px] items-center justify-center bg-primary font-semibold text-white transition-all duration-300 hover:scale-105"
             >
-              More About Us
+              Our Collections
             </Link>
           </div>
         </div>

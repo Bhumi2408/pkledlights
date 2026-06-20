@@ -1,103 +1,102 @@
+"use client";
+import CountUp from "react-countup";
+
 export default function AboutSection() {
   const stats = [
     {
-      number: "15K",
+      number: "8",
       suffix: "+",
-      label: "Lamps installed in 2023",
+      label: "Years of Experience",
     },
     {
-      number: "298",
-      label: "Custom solutions",
-    },
-    {
-      number: "2K",
+      number: "40",
       suffix: "+",
-      label: "Clients in the USA",
+      label: "Employee Count",
     },
     {
-      number: "599",
-      label: "Large-scale projects",
+      number: "50",
+      suffix: "+",
+      label: "Product Types",
+    },
+    {
+      number: "100",
+      suffix: "%",
+      label: "Client Satisfaction",
     },
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#252527] pt-32 pb-28 px-32">
+    <section
+      id="about"
+      className="relative overflow-hidden bg-[#252527] px-5 py-20 md:px-10 lg:px-20 xl:px-32 xl:pt-32 xl:pb-28"
+    >
       {/* Background Text */}
       <div className="pointer-events-none absolute -left-10 bottom-0 select-none">
-        <h2 className="text-[230px] font-bold leading-none text-white/[0.03] [writing-mode:vertical-rl] rotate-180">
+        <h2 className="text-[120px] md:text-[180px] xl:text-[230px] font-bold leading-none text-white/[0.06] [writing-mode:vertical-rl] rotate-180">
           ABOUT
         </h2>
       </div>
 
       <div className="container-custom relative z-10">
-
         {/* Top Content */}
         <div className="grid gap-20 lg:grid-cols-2">
-
           {/* Left */}
           <div>
-            <p className="mb-8 text-xs font-semibold uppercase tracking-[0.1em] text-primary">
+            <p className="mb-8 text-sm lg:text-xs font-semibold uppercase tracking-[0.1em] text-primary">
               \ ABOUT US \
             </p>
 
-            <h2 className="max-w-[650px] text-[62px] font-semibold leading-[1.05] text-white">
-              Illuminate Your
+            <h2 className=" text-[40px] md:text-[52px] xl:text-[60px] font-semibold leading-[1.05] text-white">
+              Delhi's Leading, 
               <br />
-              Space, Illuminate
+              LED Light Manufacturer
               <br />
-              Your Life With Us
+              Built on Trust & Quality
             </h2>
 
-            <p className="mt-8 text-[19px] font-medium text-white">
-              Get a lightning solution that suits your needs.
-            </p>
           </div>
 
           {/* Right */}
           <div>
-            <h3 className="max-w-[650px] text-4xl font-medium leading-tight text-white">
-              Place the Right Accents with Modern Lights by Scoot Studio
+            <h3 className="max-w-[650px] text-3xl md:text-4xl font-medium leading-tight text-white">
+              Manufacturing Excellence Since 2017
             </h3>
 
             <p className="mt-7 leading-relaxed text-white/70">
-              We closely cooperate with our clients to fully understand
-              their needs and goals during the early stages of the project.
-              We provide accurate lighting analysis, detailed specifications,
-              schedules for integration, detailed fixture design, and more.
+              SCOOT (PK Led Light) has built a strong reputation as one of Delhi's most reliable LED light manufacturers, supplying panel lights, wall lights, ceiling lighting, surface-mounted lighting, street lighting, and deep downlights. Based in Bawana Industrial Area, Delhi, we are recognised for delivering high-quality lighting solutions across residential, commercial, and industrial sectors.
+
             </p>
 
             <p className="mt-5 leading-relaxed text-white/70">
-              Our true passion is the art of integrating light within
-              architecture. We have completed over 2000 residential
-              projects and built complex lighting system designs nearly
-              in every interior and exterior imaginable.
+              As a verified LED light manufacturer in Delhi, we offer a wide range of premium lighting products — including panel lights, surface-mounted lights, flood lights, street lights, concealed lights, COB LEDs, and spotlights — in bulk, with a strong focus on quality and timely delivery.
+
             </p>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="mt-24 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-
+        <div className="mt-16 xl:mt-24 grid gap-5 grid-cols-2 xl:grid-cols-4">
           {stats.map((item, index) => (
             <div
               key={index}
-              className={`border border-white/10 p-7 min-h-[180px] flex flex-col justify-between
-              ${
-                index === 3
-                  ? "rounded-tr-[80px]"
-                  : ""
+              className={`border border-white/10 p-6 xl:p-7 min-h-[160px] xl:min-h-[180px] flex flex-col justify-between ${
+                index === 3 ? "xl:rounded-tr-[80px]" : ""
               }`}
             >
-              <h3 className="text-[62px] font-semibold leading-none text-white">
-                {item.number}
+              <h3 className="text-[42px] md:text-[52px] xl:text-[62px] font-semibold leading-none text-white">
+                <CountUp
+                  end={parseInt(item.number.replace("K", ""))}
+                  duration={3}
+                />
+
+                {item.number.includes("K") && "K"}
+
                 {item.suffix && (
                   <span className="text-primary"> {item.suffix}</span>
                 )}
               </h3>
 
-              <p className="text-white/70">
-                {item.label}
-              </p>
+              <p className="text-white/70">{item.label}</p>
             </div>
           ))}
         </div>
