@@ -7,6 +7,7 @@ import FeatureSection from "./components/FeatureSection";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
 import ServiceSection from "./components/ServiceSection";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
     <ContactCTA/>
     <Blog/>
     <FAQ/>
+    <WhatsAppButton/>
    </div>
   );
 }

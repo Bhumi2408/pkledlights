@@ -18,12 +18,12 @@ export const blogs = [
     content: [
       "\"Last month, a shop owner from Karol Bagh called us with a simple complaint — 'These lights lasted only 8 months and stopped working. Money wasted, work disrupted.'\"",
       "If you have ever bought LED lights in Delhi that looked fine in the shop but started flickering or fading within months — you already know how frustrating that feels. You spend money, get them installed, and then deal with the headache of replacements.",
-      "The truth is, Delhi's lighting market is full of options. But not every supplier is actually a proper LED light manufacturer in Delhi — many are just traders selling low-quality products at attractive prices.",
+      "The truth is, Delhi's lighting market is full of options. But not every supplier is actually a proper [LED light manufacturer in Delhi](/) — many are just traders selling low-quality products at attractive prices.",
       "This guide will help you spot the difference — so the next time you buy, you get lights that actually last, actually save electricity, and actually give you value for your money.",
 
       { type: "heading", text: "Why Choosing the Right LED Light Manufacturer in Delhi Matters" },
       "Not every LED light is made the same way. Some manufacturers use cheap parts to cut costs. These lights may look fine at first, but they start flickering, losing brightness, or burning out within a year or two.",
-      "A good LED light manufacturer uses quality parts, tests every product, and stands behind what they sell.",
+      "A good [LED light manufacturer](/blogs/trusted-led-light-manufacturer-in-delhi) uses quality parts, tests every product, and stands behind what they sell.",
       "For example, SCOOT (PK Led Light) has been making LED lights since 2017 — that is over 8 years of experience. They are based in Bawana Industrial Area, Delhi, and make 50+ types of LED products for homes, offices, shops, roads, and factories.",
       {
         type: "list",
@@ -161,7 +161,7 @@ export const blogs = [
       "\"The real problem is not LED lights themselves. The problem is not buying from a verified LED light manufacturer — and that one mistake costs you more than you think.\"",
       "Sound familiar?",
       "If you have ever bought LED lights that looked fine in the shop but started flickering or dying within months — you already know how frustrating that feels. The real problem is not LED lights themselves. The problem is buying from the wrong source.",
-      "This is exactly why choosing a reliable LED light manufacturer matters more than most people think.",
+      "This is exactly why choosing a reliable [LED light manufacturer](/) matters more than most people think.",
 
       { type: "heading", text: "Why Do Most LED Lights in Delhi Fail So Early?" },
       "The short answer: cheap parts and no quality checks.",
@@ -236,7 +236,7 @@ export const blogs = [
 
       { type: "heading", text: "Final Thought" },
       "Bad LED lights are not a small problem. They cost you money upfront, cost you money in replacements, and cost you money every month on electricity bills.",
-      "Choosing a quality LED light manufacturer in Delhi — one with real manufacturing experience, proper quality control, and a wide product range — is the single best decision you can make for any lighting project.",
+      "Choosing a quality [LED light manufacturer in Delhi](/blogs/led-light-manufacturer-delhi-guide) — one with real manufacturing experience, proper quality control, and a wide product range — is the single best decision you can make for any lighting project.",
       "Stop replacing lights every few months. Start choosing right.",
     ],
 

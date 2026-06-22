@@ -82,3 +82,10 @@ body {
   width: max-content;
   animation: marqueeReverse 80s linear infinite;
 }
+
+.marquee-wrapper:hover .marquee,
+.marquee-wrapper:hover .marquee-reverse,
+.marquee:hover,
+.marquee-reverse:hover {
+  animation-play-state: paused !important;
+}

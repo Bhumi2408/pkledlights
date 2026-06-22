@@ -164,7 +164,7 @@ export default function Products() {
       name: "Royal Cob",
     },
     {
-      image: "/images/Flood-lens.jpg",
+      image: "/images/flood-lens.jpg",
       name: "Flood Light Lens Model",
     },
   ];
@@ -275,8 +275,8 @@ export default function Products() {
         <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black to-transparent z-10" />
 
         {/* Row 1 */}
-        <div className="group relative flex overflow-hidden py-3">
-          <div className="marquee flex gap-6 group-hover:[animation-play-state:paused]">
+       <div className="marquee-wrapper relative flex overflow-hidden py-3">
+          <div className="marquee flex gap-6">
             {[...row1Products, ...row1Products].map((item, index) => (
               <ProductCard key={index} img={item.image} name={item.name} />
             ))}
@@ -284,8 +284,8 @@ export default function Products() {
         </div>
 
         {/* Row 2 */}
-        <div className="group relative mt-6 flex overflow-hidden py-3">
-          <div className="marquee-reverse flex gap-6 group-hover:[animation-play-state:paused]">
+        <div className="marquee-wrapper relative flex overflow-hidden py-3">
+          <div className="marquee-reverse flex gap-6">
             {[...row2Products, ...row2Products].map((item, index) => (
               <ProductCard key={index} img={item.image} name={item.name} />
             ))}
@@ -293,8 +293,8 @@ export default function Products() {
         </div>
 
         {/* Row 3 */}
-        <div className="group relative mt-6 flex overflow-hidden py-3">
-          <div className="marquee flex gap-6 group-hover:[animation-play-state:paused]">
+       <div className="marquee-wrapper relative flex overflow-hidden py-3">
+          <div className="marquee flex gap-6">
             {[...row3Products, ...row3Products].map((item, index) => (
               <ProductCard key={index} img={item.image} name={item.name} />
             ))}

@@ -10,9 +10,13 @@ const manrope = Manrope({
 
 export const metadata = {
   title: "Best LED Light Manufacturer in Delhi | Pk Led Light",
-  description: "Pk Led Light is a trusted LED light manufacturer in Delhi offering premium indoor, outdoor, industrial & decorative LED lighting solutions. Energy-efficient, durable & affordable. Contact Us today!",
-   icons: {
+  description:
+    "Pk Led Light is a trusted LED light manufacturer in Delhi offering premium indoor, outdoor, industrial & decorative LED lighting solutions. Energy-efficient, durable & affordable. Contact Us today!",
+  icons: {
     icon: "/favicon.png",
+  },
+  verification: {
+    google: "OYaRVIW92_o5MhdD57Kb5gHKONF1iUjD2QVJ6CZ_yh4",
   },
 };
 

@@ -5,6 +5,41 @@ import { useParams, notFound } from "next/navigation";
 import { blogs } from "@/app/data/blogs";
 import Link from "next/link";
 
+function renderTextWithLinks(text) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+
+    if (match) {
+      const [, label, href] = match;
+      const isInternal = href.startsWith("/");
+
+      return isInternal ? (
+        <Link
+          key={i}
+          href={href}
+          className="text-primary underline underline-offset-4 hover:text-white"
+        >
+          {label}
+        </Link>
+      ) : (
+        <a
+          key={i}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline underline-offset-4 hover:text-white"
+        >
+          {label}
+        </a>
+      );
+    }
+
+    return part;
+  });
+}
+
 export default function BlogDetails() {
   const { slug } = useParams();
   const blog = blogs.find((item) => item.slug === slug);
@@ -57,7 +92,7 @@ export default function BlogDetails() {
             if (typeof block === "string") {
               return (
                 <p key={index} className="text-lg leading-[2] text-white/80">
-                  {block}
+                  {renderTextWithLinks(block)}
                 </p>
               );
             }
@@ -68,7 +103,7 @@ export default function BlogDetails() {
                   key={index}
                   className="mt-4 text-2xl font-semibold text-white md:text-3xl"
                 >
-                  {block.text}
+                  {renderTextWithLinks(block.text)}
                 </h2>
               );
             }
@@ -80,9 +115,26 @@ export default function BlogDetails() {
                   className="list-disc space-y-3 pl-6 text-lg leading-[1.8] text-white/80"
                 >
                   {block.items.map((item, i) => (
-                    <li key={i}>{item}</li>
+                    <li key={i}>{renderTextWithLinks(item)}</li>
                   ))}
                 </ul>
+              );
+            }
+
+            if (block.type === "image") {
+              return (
+                <div key={index} className="overflow-hidden rounded-[25px]">
+                  <img
+                    src={block.src}
+                    alt={block.alt || ""}
+                    className="h-auto w-full object-cover"
+                  />
+                  {block.caption && (
+                    <p className="mt-3 text-center text-sm text-white/40">
+                      {block.caption}
+                    </p>
+                  )}
+                </div>
               );
             }
 
@@ -140,7 +192,12 @@ export default function BlogDetails() {
             lighting solutions.
           </p>
 
-        
+          <a
+            href="tel:+919212533254"
+            className="mt-8 inline-flex bg-primary px-8 py-4 text-white"
+          >
+            Call Now
+          </a>
         </div>
 
         {/* Related Blogs */}
@@ -205,7 +262,9 @@ function FAQSection({ faq }) {
             </button>
 
             {active === index && (
-              <div className="px-6 pb-6 text-white/70">{item.answer}</div>
+              <div className="px-6 pb-6 text-white/70">
+                {renderTextWithLinks(item.answer)}
+              </div>
             )}
           </div>
         ))}
