@@ -4,9 +4,8 @@ import Collections from "./components/Collections";
 import ContactCTA from "./components/ContactCTA";
 import FAQ from "./components/FAQ";
 import FeatureSection from "./components/FeatureSection";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Products from "./components/Products";
 import ServiceSection from "./components/ServiceSection";
 
 
@@ -18,6 +17,7 @@ export default function Home() {
     <FeatureSection/>
     <ServiceSection/>
     <Collections/>
+    <Products/>
     <ContactCTA/>
     <Blog/>
     <FAQ/>
