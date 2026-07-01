@@ -10,14 +10,10 @@ export default function Products() {
       image: "/images/service1.png",
       name: "Alpha Cob",
     },
-    {
-      image: "/images/12w-pc.jpg",
-      name: "12w PC Panel (round)",
-    },
 
     {
       image: "/images/alpha-down.png",
-      name: "Alpha Down Light",
+      name: "Alfa Down Light",
     },
     {
       image: "/images/deep-cob.png",
@@ -84,6 +80,14 @@ export default function Products() {
       image: "/images/diamond-panel.png",
       name: "Diamond Panel",
     },
+    {
+      image: "/images/full-k.png",
+      name: "Wall Light-07 full k",
+    },
+    {
+      image: "/images/wl-4.png",
+      name: "Wall Light-4 2+2",
+    },
   ];
 
   const row2Products = [
@@ -101,7 +105,7 @@ export default function Products() {
     },
     {
       image: "/images/flood-light.jpg",
-      name: "Flood Light",
+      name: "Flood Light GM Modle",
     },
     {
       image: "/images/tracklight-black.png",
@@ -113,7 +117,7 @@ export default function Products() {
     },
     {
       image: "/images/walllight-black.png",
-      name: "Wall Light (Black)",
+      name: "Cob Spot Light",
     },
     {
       image: "/images/lexus-panel.png",
@@ -166,6 +170,18 @@ export default function Products() {
     {
       image: "/images/flood-lens.jpg",
       name: "Flood Light Lens Model",
+    },
+    {
+      image: "/images/wl-16.png",
+      name: "Wall Light-16 metal body",
+    },
+    {
+      image: "/images/wl-15.jpg",
+      name: "Wall Light-15",
+    },
+    {
+      image: "/images/wl-17.jpg",
+      name: "Wall Light-17 metal body ",
     },
   ];
 
@@ -242,7 +258,24 @@ export default function Products() {
       image: "/images/glitter.png",
       name: "Glitter",
     },
+    {
+      image: "/images/4way.jpg",
+      name: "Wall Light-02 Cube 4way",
+    },
+    {
+      image: "/images/led-bulb-head.png",
+      name: "Led Bulk Head",
+    },
+    {
+      image: "/images/wl-05.jpg",
+      name: "Wall Light-05 3+3",
+    },
+    {
+      image: "/images/wl-06.png",
+      name: "Wall Light-06 Half K",
+    },
   ];
+
 
   return (
     <section
@@ -300,6 +333,7 @@ export default function Products() {
             ))}
           </div>
         </div>
+        
       </div>
     </section>
   );
