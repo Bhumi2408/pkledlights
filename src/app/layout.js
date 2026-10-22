@@ -9,7 +9,25 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
+const SITE_NAME = "PK LED Lights";
+const SITE_URL = "https://www.ledlightsmanufacturer.in";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  alternateName: ["PK LED Light", "Pk Led Lights", "pkledlights"],
+  url: `${SITE_URL}/`,
+};
+
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website",
+    url: "/",
+  },
   title: "Best LED Light Manufacturer in Delhi | Pk Led Light",
   description:
     "Pk Led Light is a trusted LED light manufacturer in Delhi offering premium indoor, outdoor, industrial & decorative LED lighting solutions. Energy-efficient, durable & affordable. Contact Us today!",
@@ -25,6 +43,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-M57KEPR5BV"

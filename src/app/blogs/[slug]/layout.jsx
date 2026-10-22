@@ -22,6 +22,7 @@ export async function generateMetadata({ params }) {
     keywords: blog.focusKeyword,
 
     openGraph: {
+      siteName: "PK LED Lights",
       title: blog.metaTitle || blog.title,
       description:
         blog.metaDescription || blog.description,
