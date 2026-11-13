@@ -2,6 +2,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PopupForm from "./components/PopupForm";
 import Script from "next/script";
 
 const manrope = Manrope({
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <PopupForm />
       </body>
     </html>
   );

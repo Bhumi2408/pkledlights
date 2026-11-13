@@ -89,3 +89,12 @@ body {
 .marquee-reverse:hover {
   animation-play-state: paused !important;
 }
+@keyframes popupFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popupIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
